@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dropdowns and Accordions</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+    <div class="w3-container w3-auto">
+        <div class="w3-panel w3-pale-blue w3-center">
+            <h2> Fun Facts About Python</h2>
+        </div>
+<!-- Question #1 - regular answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container w3-auto">
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo1')" class="w3-btn w3-block w3-pale-green w3-left-align "
+style="width: 50%">1. What is python's rank between other languages? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo1" class="w3-container w3-hide">
+  <h4>Python holds the #1 spot in the TIOBE Index for May 2025, the highest rating since 2001.</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+
+<!-- Question #2 - regular answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container w3-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo2')" class="w3-btn w3-block w3-pale-green w3-left-align "
+style="width: 50%">2. But what is TIOBE index? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo2" class="w3-container w3-hide">
+  <h4>The TIOBE Index is a monthly ranking of programming language popularity based 
+    on the number of search engine queries for each language.</h4>
+  <img src="pictures/tiobe.png" style="width:33%">
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+
+<!-- Question #3 - regular answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container w3-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo3')" class="w3-btn w3-block w3-pale-green w3-left-align "
+style="width: 50%">3. Random fact about python! &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo3" class="w3-container w3-hide">
+    <div class="w3-card" style="width:25%">
+    <img src="pictures/monty.jpg" alt="Monty Python's Flying Circus" style="width:100%; height:300px">
+  </div>
+  <h4 class="w3-theme-l4" style="width:50%">The programming language Python was named 
+    after the British sketch comedy group Monty Python, not the snake.</h4>
+  <p style="width:50%">Guido van Rossum, Python's creator, was a big fan of the show 
+    "Monty Python's Flying Circus" and chose the name as a tribute. This is why Python's 
+    official documentation and examples often contain humorous references to Monty Python sketches.</p>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+
+<!-- Question #4 - regular answer-->
+<!-- create a container for an accordion style button -->
+<div class="w3-container w3-auto">
+
+<!-- accordion style button, only change color-->
+<button onclick="myFunction('Demo4')" class="w3-btn w3-block w3-pale-green w3-left-align "
+style="width: 50%">4. What is the 80/20 principle in python? &#9660;</button>
+<!-- div for the answer that will drop down once a button is clicked -->
+<div id="Demo4" class="w3-container w3-hide">
+  <h4>The 80/20 principle, also called the Pareto Principle, is a rule that says 80% of 
+    the results come from 20% of the efforts. If you learn the 20% of Python concepts 
+    that are most important and used the most, you can get 80% of what you need to be good at it.</h4>
+</div> <!--end of answer div-->
+
+</div> <!-- closing <div> for an accordion style button -->
+<!-- add breaks as needed for space between buttons -->
+<br>
+<br>
+<!-- repeat the code two or three times for additional questions-->
+
+<!-- repeat the code two or three times for additional questions-->
+<!-- footer with your name on it -->
+
+<div class="w3-container w3-auto w3-pale-blue w3-center">
+    <footer><h3> Sara Kaci, 2025 </h3></footer>
+</div>
+
+<!-- DO NOT CHANGE THE SCRIPT -->
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+</script>
+</body>
+</html>
