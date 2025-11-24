@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The seven wonders of the world</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+    img {height: 350px; width: 250px;}
+    .mySlides {display:none;}
+    img {width: 350px; height: 400px;}
+</style>
+</head>
+
+<body>
+<div class="w3-container w3-auto">
+<div class="w3-container w3-auto w3-blue w3-center">
+  <h1>The seven wonders of the world</h1>
+</div>
+<!-- set up each image, the coding will be the same but different images-->
+<div class="w3-content w3-display-container" style="width: 500px;">
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/rome.webp" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Colosseum, Italy
+</div>
+</div>
+
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/petra.webp" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Petra, Jordan
+</div>
+</div>
+
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/machuPiccu.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Machu Piccu, Peru
+</div>
+</div>
+
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/theTajMahal.webp" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Taj Mahal, India
+</div>
+</div>
+
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/greatWall.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Great Wall of China, China
+</div>
+</div>
+
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/ChichenItza.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Chichén Itzá, Mexico
+</div>
+</div>
+
+<div class="w3-display-container mySlides w3-large">
+  <img src="pictures/ChristtheRedeemer.jpg" style="width:100%">
+  <div class="w3-display-bottommiddle w3-large w3-container w3-padding-12 w3-black">Christ The Redeemer, Brazil
+</div>
+</div>
+
+<!-- The buttons for navigating through images-->
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+<!-- JAVASCRIPT - SLIDESHOW AUTOMATION-->
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 2000);
+}
+</script>
+<footer>
+    <div>
+        <h3> SARA KACI, 2025 </h3>
+    </div>
+</footer>
+</div>
+</div>
+</body>
+</html>
