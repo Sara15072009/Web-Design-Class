@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>About Us - Delphinium Library</title>
+<link rel="stylesheet" href="styles.css" />
+<style>
+body {
+  position: relative;
+  margin: 0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://i.pinimg.com/736x/ad/41/3d/ad413d5f9f07217e18433343e79820ea.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-mask-image: linear-gradient(to left, black 20%, transparent);
+  mask-image: linear-gradient(to left, black 20%, transparent);
+  z-index: -1;
+}
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  width: 100%;
+  font-weight: bold;
+}
+h2 {
+  margin-left: 10px;
+}
+header {
+  padding: 10px;
+}
+.logo {
+  font-size: 1.5rem;
+}
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+}
+.search-input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.about-main-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  padding: 20px;
+  margin-left: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+.about-text {
+  flex: 1;
+  max-width: 55%;
+}
+.AboutUs-container {
+  flex: 1;
+  max-width: 40%;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.about-input {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+textarea {
+  resize: none;
+  height: 90px;
+}
+input[type="radio"] {
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">Delphinium Library</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="Shop.html">Shop</a>
+<a href="Login.html">Login</a>
+<a href="SignUp.html">Sign up</a>
+<a href="Profile.html">Profile</a>
+<a href="logout.html">Logout</a>
+<a href="AboutUs.html">About Us</a>
+<input type="text" class="search-input" placeholder="Search..." />
+</nav>
+</header>
+<div class="about-main-container">
+<div class="about-text">
+<h2>OUR MISSION</h2>
+<p>At Delphinium Library, we are dedicated to fostering a love for reading and learning. Our mission is to provide a diverse collection of books that inspire, educate, and entertain our community. We strive to make literature accessible to everyone, offering a carefully curated selection of bestsellers, classic works, and emerging authors. Through our easy-to-use online platform, readers can explore new titles, find their next favorite book, and immerse themselves in the world of stories and knowledge. Join us at Delphinium Library, where every page turns into a new adventure.</p>
+<h2>OUR LIBRARY'S FOUNDING</h2>
+<p>The Delphinium Library was founded on 27th March 2025 by Sara Kaçi, with the aim of creating a welcoming digital space where book lovers can discover, explore, and share their passion for literature. Our purpose is to make reading more accessible and enjoyable for everyone by offering a wide range of books and fostering a community of avid readers. Whether you're searching for bestsellers, timeless classics, or new voices in literature, Delphinium Library is here to inspire your next great read.</p>
+<h2>CONTACT US</h2>
+<p>If you have any questions, suggestions, or feedback, please feel free to reach out to us. We value your input and are always looking for ways to improve our library and enhance your reading experience. You can contact us at: <br /><strong>Email: </strong> sara_admin@gmail.com <br /></p>
+</div>
+<div class="AboutUs-container">
+<h2>DO YOU WANT TO COLLABORATE?</h2>
+<p>If you are an author, publisher, or literary organization interested in collaborating with Delphinium Library, we would love to hear from you! We are open to partnerships that promote literature and support our mission of making reading accessible to all. So, what are you waiting for? Reach out!</p>
+<form>
+<input class="about-input" type="text" placeholder="Full Name" required /><br/>
+<input class="about-input" type="email" placeholder="Email Address" required /><br/>
+<input class="about-input" type="tel" placeholder="Phone Number" required /><br/>
+<input class="about-input" type="text" placeholder="Position/Job Title" /><br/>
+<textarea class="about-input" placeholder="What is your interest in Delphinium Library?"></textarea><br/>
+<label>Location:</label><br/><br/>
+<input type="radio" name="Location" id="europe" /><label for="europe">Europe</label>
+<input type="radio" name="Location" id="south-america" /><label for="south-america">South America</label>
+<input type="radio" name="Location" id="north-america" /><label for="north-america">North America</label><br/>
+<input type="radio" name="Location" id="australia" /><label for="australia">Australia</label>
+<input type="radio" name="Location" id="asia" /><label for="asia">Asia</label>
+<input type="radio" name="Location" id="africa" /><label for="africa">Africa</label><br />
+<input type="radio" name="Agreement" id="agreement" required />
+<label for="agreement">I agree to receive communication from Delphinium Library!</label><br />
+<button type="submit">Submit</button>
+</form>
+<div id="success-message" style="display:none; color: green; margin-top: 10px;">
+  Thank you for submitting! We'll be in touch soon.
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

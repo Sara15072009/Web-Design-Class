@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Delphinium Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .signup-container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin-top: 30px;
+            margin-left: 450px;
+        }
+        .signup-input {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        p {
+            margin-top: 15px;
+            font-size: 0.9em;
+        }
+        a {
+            color: #5a67d8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+         body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/premium-photo/celebrate-book-lovers-day-with-flat-event-literature-enthusiasts-concept-book-themed-decor-literary-trivia-author-readings-book-swap-virtual-discussion_864588-249097.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Delphinium Library</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Login.html">Login</a>
+            <a href="SignUp.html">Sign up</a>
+            <a href="Profile.html">Profile</a>
+            <a href="logout.html">Logout</a>
+            <a href="AboutUs.html">About Us</a>
+            <input type="text" class="search-input" placeholder="Search...">
+        </nav>
+    </header>
+    <div class="signup-container">
+        <form action="php/auth.php" method="POST">
+            <input type="hidden" name="type" value="signup">
+            <h2>Sign Up</h2>
+            <input class="signup-input" type="text" name="fullname" placeholder="Full Name" required>
+            <input class="signup-input" type="email" name="email" placeholder="Email" required>
+            <input class="signup-input" type="text" name="username" placeholder="Username" required>
+            <input class="signup-input" type="password" name="password" placeholder="Password" required>
+            <input class="signup-input" type="password" name="confirm_password" placeholder="Confirm Password" required>
+            <button type="submit">Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="login.html">Log In</a></p>
+    </div>
+</body>
+</html>

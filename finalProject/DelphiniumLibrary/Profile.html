@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Delphinium Library</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+    <style>
+.update-btn {
+  color: #1e38acc9;
+  padding: 15px;
+  border-radius: 5px;
+  min-width: 80px;
+  max-width: 200px;
+  -webkit-text-fill-color: #000000;
+}
+.profile-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+.profile-picture:hover {
+  transform: scale(1.05);
+}
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.profile-info h3 {
+  font-size: 22px;
+  color: #ffffff;
+  font-weight: 600;
+}
+.profile-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 0 10px 0;
+}
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  margin-left: 10px;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.profile-info {
+  margin-left: 30px;
+}
+.profile-extra {
+  padding-left: 10px;
+}
+.profile-card p {
+  margin: 5px 0;
+  color: #ffffff;
+}
+.profile-tab {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px;
+}
+p {
+  margin-left: 50px;
+}
+.social-links {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  max-width: 250px;
+}
+.social-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: 10px 0;
+  color: #333;
+  transition: color 0.3s;
+}
+.social-item i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #00a6ff;
+}
+.social-item:hover {
+  color: #005582;
+}
+.social-item:hover i {
+  color: #005582;
+}
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+body {
+  position: relative;
+  margin: 0;
+  background-color: #2877c0;
+}
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://img.freepik.com/free-vector/hand-painted-abstract-blue-wallpaper-watercolor_23-2149106510.jpg?semt=ais_hybrid&w=740');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  -webkit-mask-image: linear-gradient(to left, black 30%, transparent);
+  mask-image: linear-gradient(to left, black 30%, transparent);
+  z-index: -1;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Delphinium Library</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="Shop.html">Shop</a>
+            <a href="Login.html">Login</a>
+            <a href="SignUp.html">Sign up</a>
+            <a href="Profile.html">Profile</a>
+            <a href="logout.html">Logout</a>
+            <a href="AboutUs.html">About Us</a>
+            <input type="text" class="search-input" placeholder="Search...">
+        </nav>
+    </header>
+    <div class="profile-container">
+  <div class="profile-card">
+    <div class="profile-main">
+      <div class="profile-picture">
+        <img src="https://t4.ftcdn.net/jpg/08/23/95/89/360_F_823958944_1c9covIC7Tl7eyJtWoTiXc0L4vP6f43q.jpg" alt="User Profile Picture">
+      </div>
+      <div class="profile-info">
+        <h3 class="username">Sara</h3>
+        <p class="name">Admin</p>
+        <p class="location"><strong>Location: </strong> Tirana, Albania</p>
+      </div>
+    </div>
+    <div class="profile-extra">
+      <p class="email"><strong>Email: </strong> sara_admin@gmail.com</p>
+      <p class="about"><strong>About: </strong>Hello everyone! I'm Sara, this website's admin<br>but also a 📖 lover. I'm here to help you with anything!🤗</p>
+      <div class="social-links">
+  <div class="social-item">
+    <i class="fab fa-facebook-f"></i>
+    <a href="https://web.facebook.com/?_rdc=1&_rdr#">Add Facebook</a>
+  </div>
+  <div class="social-item">
+    <i class="fab fa-instagram"></i>
+    <a href="https://www.instagram.com/accounts/login/?hl=en">Add Instagram</a>
+  </div>
+  <div class="social-item">
+    <i class="fab fa-twitter"></i>
+    <a href="https://x.com/i/flow/login">Add Twitter</a>
+  </div>
+</div>
+      <button class="update-btn">Update Profile</button>
+    </div>
+  </div>
+</div>
+</body>
+</html>
