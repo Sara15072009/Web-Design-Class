@@ -39,6 +39,25 @@ body {
     background-color: #8097ffc9;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover {
+    color: blue;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -47,32 +66,19 @@ header {
     background-color: #93f7d7;
 }
 
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-}
-
 nav {
     display: flex;
     align-items: center;
     gap: 15px;
-    flex-wrap: wrap;
-    flex: 1;
 }
 
-nav a {
+/*nav a {
     text-decoration: none;
     text-align: center;
     resize: none;
     color: black;
     font-size: 16px;
-}
+}*/
 
 .search-input {
     padding: 5px;
