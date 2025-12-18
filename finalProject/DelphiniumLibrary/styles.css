@@ -70,6 +70,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 15px;
+    position: relative;
 }
 
 /*nav a {
@@ -85,6 +86,24 @@ nav {
     border: 1px solid #ccc;
     border-radius: 4px;
     min-width: 200px;
+}
+
+.search-list {
+    display: none;
+    list-style: none;
+    padding: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    position: absolute;
+}
+
+/* shows list when input is focused (clicked or typing) */
+.search-input:focus + .search-list {
+    display: block;
+}
+
+li:hover {
+    background-color:darkgray
 }
 
 h1 {
