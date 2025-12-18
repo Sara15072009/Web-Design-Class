@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DelphiniumLibrary</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         body {
-            background-image: url('https://chasingpaper.com/cdn/shop/products/Delphinium4_X2_-1up_REPEAT.jpg?v=1668024543');
+            background-color: #80ead8;
         }
         .card {
             background-color: white;
@@ -26,7 +27,6 @@
             <a href="Shop.html">Shop</a>
             <a href="Login.html">Login</a>
             <a href="SignUp.html">Sign up</a>
-            <a href="Connect.html">Connect</a>
             <a href="Profile.html">Profile</a>
             <a href="logout.html">Logout</a>
             <a href="AboutUs.html">About Us</a>
@@ -40,7 +40,7 @@
                 <li>Fairy tales</li>
                 <li>Romance</li>
                 <li>Crime</li>
-                <li>Mistery</li>
+                <li>Mystery</li>
                 <li>Thriller</li>
                 <li>Political</li>
                 <li>Philosophy</li>
@@ -49,11 +49,19 @@
                 <li>History</li>
            </ul>
             </div>
-    </header>
+    </header>    
     <main>
-        <section class="hero">
-            <h1>Welcome to Delphinium Library!</h1>
-        </section>
+    <section class="hero">
+        <video autoplay muted loop playsinline>
+        <source src="Library.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+    <div class="hero-text">
+        <h1>Welcome to Delphinium Library!</h1>
+        <p>Discover. Read. Enjoy.</p>
+     </div>
+    </section>
+
         <section id="featured-books" class="py-5 mySlides">
             <div class="container">
             <h2 class="text-center mb-4">Featured books</h2>
@@ -168,6 +176,58 @@
             </div>
             </div>
         </section>
+        <hr>
+        <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>When Are We Open?</h3>
+      <table class="w3-table w3-bordered w3-pale-blue">
+        <tr>
+            <td>Monday</td><td>9:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td><td>9:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td><td>9:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Thursday</td><td>9:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Friday</td><td>9:00 - 19:00</td>
+        </tr>
+        <tr>
+            <td>Saturday</td><td>9:00 - 13:00</td>
+        </tr>
+      </table>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Customer Service</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16 w3-hover-pale-blue">
+          <span class="w3-large">Contact Us</span><br>
+          <span>Email: delphinium.library@gmail.com</span>
+        </li>
+        <li class="w3-padding-16 w3-hover-pale-blue">
+          <span class="w3-large">Privacy Policy</span><br>
+          <span>Terms and conditions apply</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>POPULAR TAGS</h3>
+      <p>
+        <span class="w3-tag w3-black w3-margin-bottom">Books</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Genres</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Reading</span> 
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Writing</span>  
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Bookworm</span>
+      </p>
+    </div>
+  </footer>
     </main>
 <script>
 var slideIndex = 0;
